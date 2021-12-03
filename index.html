@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="contenitore">
+        <div>TEST MIO, ANDATO BENE = BONUS </div>
+        <div id="utenteInput">
+            <input name="inputKm" placeholder="Inserisci quanti Km devi fare" type="text" id="inputKm"/>
+            <input name="inputEta" placeholder="Inserisci la tua età" type="text" id="inputEta"/>
+        </div>
+        <div id="utenteEta">
+            <button onclick="calcolaPrezzo()">Applica</button>
+        </div>
+        <div id="pagamento">
+            <div id="totPrezzo">
+                <span>totale prezzo : </span>
+                <span id="euroPrezzo">0,00 &euro;</span>
+            </div>
+            <div id="sconto">
+                <span>sconto applicato : </span>
+                <span id="euroSconto">- 0,00 &euro;</span>
+            </div>
+            <div id="totOrdine">
+                <span>totale ordine : </span>
+                <span id="euroOrdine">0,00 &euro;</span>
+            </div>
+        </div>
+    </div>
+
+
     <script text="text/javascript" src="script.js"></script>
 </body>
 </html>

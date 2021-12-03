@@ -9,8 +9,16 @@ output finale con 2 decimali
 numero da modificare.toFixed(numero di decimali);
 */
 
-let utenteKm = parseInt(prompt(' quanti Km devi/vuoi fare? '));
-let utenteEta = parseInt(prompt(' quanti anni hai? '));
+let utenteKm = prompt(' quanti Km devi/vuoi fare? ');
+while(isNaN(utenteKm)){
+    utenteKm = (prompt('Errore!! , quanti Km devi/vuoi fare? '));
+}
+
+let utenteEta = (prompt(' quanti anni hai? '));
+while(isNaN(utenteEta)){
+    utenteEta = (prompt('Errore!! , quanti anni hai? '));
+}
+
 let prezzoTot = 0.21 * utenteKm;
 
 document.writeln('Prezzo per il biglietto : ' , prezzoTot.toFixed(2) , ' &euro;');
